@@ -66,7 +66,7 @@ html {
 /* Обновленный блок Hero с хаотичным фоном */
 .hero {
     /* Подключаем твою картинку-коллаж */
-    background-image: url('chaos-bg.jpg');
+    background-image: url('Hero.png');
     background-size: cover; /* Картинка заполнит весь экран */
     background-position: center;
     background-repeat: no-repeat;
