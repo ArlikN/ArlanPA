@@ -63,31 +63,43 @@ html {
     color: #3498db;
 }
 
-/* Главный экран (Hero) */
-.hero-section {
-    height: 100vh;
-    background: linear-gradient(135deg, #2c3e50, #3498db);
+/* Обновленный блок Hero с хаотичным фоном */
+.hero {
+    /* Подключаем твою картинку-коллаж */
+    background-image: url('chaos-bg.jpg');
+    background-size: cover; /* Картинка заполнит весь экран */
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    position: relative; /* Обязательно для наложения слоя затемнения */
+    
+    /* Твои старые свойства для центрирования (оставь их как были, если они есть) */
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+/* Создаем затемняющий или высветляющий слой, чтобы текст читался */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Если хочешь темный фон: rgba(0, 0, 0, 0.7) */
+    /* Если хочешь светлый фон: rgba(255, 255, 255, 0.8) */
+    background-color: rgba(255, 255, 255, 0.7); 
+    z-index: 1; /* Оверлей лежит НАД фоном */
+}
+
+/* Весь текст и кнопки в Hero должны быть ПОВЕРХ оверлея */
+.hero-content {
+    position: relative;
+    z-index: 2; /* Контент лежит НАД оверлеем */
     text-align: center;
-    color: #fff;
-    padding: 0 20px;
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero-content .highlight {
-    color: #00ecff;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    opacity: 0.9;
 }
 
 /* Кнопка "O mnie" */
