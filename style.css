@@ -101,7 +101,11 @@ html {
     z-index: 2; /* Контент лежит НАД оверлеем */
     text-align: center;
 }
-
+.hero-section {
+    /* Твои свойства фона (background-image и т.д.) остаются здесь */
+    position: relative; /* Удерживает стикер внутри главного экрана */
+    overflow: hidden; /* Прячет стикер, если он случайно вылезет за края */
+}
 /* Кнопка "O mnie" */
 .btn {
     display: inline-block;
