@@ -372,21 +372,35 @@ section h2::after {
 }
 /* Цвет для твоего имени */
 .hero-content .highlight {
-    color: #8a16d7; /* Яркий акцентный цвет (можешь заменить на свой) */
+    color: #02a7ff; /* Яркий акцентный цвет (можешь заменить на свой) */
 }
 
 /* Общие стили текста на главном экране */
-.hero-content h1,
-.hero-content p {
-    color: white; /* Цвет основного текста */
-    
-    /* Твоя черная обводка */
+/* Обводка и стиль только для главного заголовка (Wassup i'm...) */
+.hero-content h1 {
+    color: white;
     text-shadow: 
         -2px -2px 0 #000,  
          2px -2px 0 #000,
         -2px  2px 0 #000,
          2px  2px 0 #000,
          4px  4px 0 #000; 
+}
+
+/* Настройки для подзаголовка (Student technikum AWANS) */
+.hero-content p {
+    color: #fff; /* Цвет текста */
+    text-shadow: none; /* Убираем обводку */
+    
+    /* Добавляем полупрозрачную черную подложку-табличку, 
+       чтобы белый текст без обводки читался на пестром фоне */
+    background-color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 /* Стиль для кнопки на главном экране (Стиль: Брутализм / Стритвир) */
 .hero-btn {
