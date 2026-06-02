@@ -464,3 +464,37 @@ section h2::after {
         width: 35px;
     }
 }
+/* --- СЕКЦИЯ ВИДЕО --- */
+.video-section {
+    background-color: #f0f0f0; /* Слегка серый фон, чтобы визуально отделить от белого "O mnie" */
+}
+
+/* Адаптивная обертка для видео (пропорции 16:9) */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* Секрет идеальных пропорций YouTube */
+    height: 0;
+    overflow: hidden;
+    max-width: 900px; /* Ограничиваем максимальную ширину на ПК */
+    margin: 0 auto;   /* Центрируем блок */
+    
+    /* Стилизация под твой дизайн (брутализм/стритвир) */
+    border-radius: 12px;
+    border: 3px solid #000;
+    box-shadow: 8px 8px 0px #000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Эффект при наведении на блок с видео */
+.video-wrapper:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 4px 4px 0px #000;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
