@@ -21,7 +21,7 @@
                     <li><a href="#about" data-i18n="nav-about">O mnie</a></li>
                     <li><a href="#contact" data-i18n="nav-contact">Kontakty</a></li>
                 </ul>
-                
+
 <div class="lang-switcher">
     <button id="btn-pl" class="lang-btn active" onclick="setLanguage('pl')" title="Polski">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 10" width="24" height="15">
@@ -48,17 +48,15 @@
 </div>
     </nav>
 <section class="hero">
-    
     <a href="https://www.instagram.com/_medic_sb/" target="_blank" class="insta-secret">
         <img src="Бека.webp" alt="Instagram">
     </a>
 
 <div class="hero-content">
-    <h1 data-i18n="hero-title">Hi i'm <span class="highlight">Arlan Auyezov</span></h1>
+    <h1 data-i18n="hero-title">Jestem <span class="highlight">Arlan Auyezov</span></h1>
     <p data-i18n="hero-subtitle">Student technikum AWANS</p>
     <a href="#about" class="hero-btn" data-i18n="hero-btn">O mnie</a>
 </div>
-
 </section>
 <section id="about" class="about-section">
         <div class="container">
@@ -133,7 +131,6 @@
     <footer class="footer">
         <p data-i18n="footer-text">&copy; 2026 Wszystkie prawa zastrzeżone.</p>
     </footer>
-
 <script>
         const translations = {
     pl: {
@@ -176,8 +173,8 @@
                 "hero-subtitle": "Студент техникума AWANS",
                 "hero-btn": "Обо мне",
                 "about-title": "Обо мне",
-                "about-p1": "Я родился в Казахстане, в городе Актобе, а сейчас живу и учусь в Польше. Я являюсь студентом техникума по направлению <strong>Программист (2 класс)</strong>, где активно развиваю свои интересы в области современных технологий и информационных систем.",
-                "about-p2": "Моя главная цель — получение практических навыков: от работы с базами данных до оптимизации компьютерного оборудования, настройки сетей и создания приложений. Я стремлюсь к созданию эффективных решений, ценю порядок в структуре данных и всегда рад новым амбициозным техническим проектам.",
+                "about-p1": "Я родился в Казахстане, в городе Актобе, а сейчас живу и учусь в Польше. Я студент техникума по направлению <strong>Программист (3 класс)</strong>, где активно развиваю свои интересы в области современных технологий и информационных систем.",
+                "about-p2": "Моя главная цель - получение практических навыков: от работы с базами данных до оптимизации компьютерного оборудования, настройки сетей и создания приложений. Я стремлюсь к созданию эффективных решений, ценю порядок в структуре данных и всегда рад новым амбициозным техническим проектам.",
                 "about-skills": "Технологии",
                 "about-gallery-title": "Галерея",
                 "contact-title": "Контакты",
@@ -185,7 +182,6 @@
                 "footer-text": "&copy; 2026 Все права защищены."
             }
         };
-
         function setLanguage(lang) {
             document.querySelectorAll('[data-i18n]').forEach(element => {
                 const key = element.getAttribute('data-i18n');
